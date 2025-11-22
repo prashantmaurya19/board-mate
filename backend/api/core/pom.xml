@@ -8,7 +8,7 @@
     <relativePath></relativePath>
     <!-- lookup parent from repository -->
   </parent>
-  <groupId>io.Twee</groupId>
+  <groupId>io.board_mate</groupId>
   <artifactId>Core</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Core</name>
