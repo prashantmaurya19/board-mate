@@ -1,2 +1,1 @@
-# tweet-analizer
-x/twitter tweet analizer web application
+# online chess multipler platform
