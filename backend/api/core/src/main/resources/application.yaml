@@ -1,0 +1,13 @@
+server:
+  port: 8097
+  servlet:
+    context-path: /cn
+
+spring:
+  application:
+    name: core-node
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-registry:8761/eureka/
