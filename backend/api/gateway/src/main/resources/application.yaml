@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: gateway
+    name: BM-GATEWAY
   main:
     web-application-type: reactive
   cloud:
@@ -11,9 +11,9 @@ spring:
       server:
         webflux:
           routes:
-            - id: core-node
+            - id: BM-CORE
               order: 1
-              uri: lb://core-node
+              uri: lb://BM-CORE
               predicates:
                 - Path=/cn/**
 

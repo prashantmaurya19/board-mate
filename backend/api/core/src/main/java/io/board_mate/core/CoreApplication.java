@@ -1,4 +1,4 @@
-package io.Twee.Core;
+package io.board_mate.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

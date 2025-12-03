@@ -1,0 +1,36 @@
+services:
+  service-registry:
+    image: board-mate:latest
+    ports:
+      - "8761:8761"
+    networks:
+      - bmnet
+    volumes:
+      - ./api/service-registry/:/app
+
+  gateway:
+    depends_on:
+      - service-registry
+      - core
+    image: board-mate:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - bmnet
+    volumes:
+      - ./api/gateway/:/app
+
+  core:
+    image: board-mate:latest
+    environment:
+      SERVER_PORT: 8061
+    depends_on:
+      - service-registry
+    networks:
+      - bmnet
+    volumes:
+      - ./api/core/:/app
+
+networks:
+  bmnet:
+    driver: bridge

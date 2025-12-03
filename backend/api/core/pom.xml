@@ -28,7 +28,7 @@
   </scm>
   <properties>
     <java.version>21</java.version>
-    <twee-starter.version>0.0.1</twee-starter.version>
+    <board_mate-starter.version>0.0.1</board_mate-starter.version>
   </properties>
   <dependencies>
     <dependency>
@@ -36,9 +36,9 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>io.Twee</groupId>
-      <version>${twee-starter.version}</version>
-      <artifactId>twee-microservice-client-starter</artifactId>
+      <groupId>io.board_mate</groupId>
+      <version>${board_mate-starter.version}</version>
+      <artifactId>board_mate-microservice-client-starter</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>

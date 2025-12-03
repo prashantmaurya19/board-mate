@@ -1,12 +1,12 @@
 server:
-  port: 8097
+  port: ${SERVER_PORT:8097}
   servlet:
     context-path: /cn
 
 spring:
   application:
-    name: core-node
-
+    name: BM-CORE 
+     
 eureka:
   client:
     service-url:

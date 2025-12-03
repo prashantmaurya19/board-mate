@@ -33,13 +33,13 @@
   </properties>
   <dependencies>
     <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.board_mate</groupId>
       <version>${board_mate-starter.version}</version>
       <artifactId>board_mate-microservice-client-starter</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
